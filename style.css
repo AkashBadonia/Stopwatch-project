@@ -1,0 +1,109 @@
+:root {
+  --first-color: #9290c3;
+  --second-color: #535c91;
+  --third-color: #1b1a55;
+  --fourth-color: #070f2b;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  background-color: var(--first-color);
+}
+/* header  */
+header {
+  background: var(--second-color);
+  border-radius: 1rem;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0.4rem 0.4rem 0.4rem var(--fourth-color);
+}
+#stopWatchHead {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: var(--fourth-color);
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--first-color);
+}
+
+/* main  */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+/* timer  */
+#timer {
+  font-family: "Orbitron";
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--first-color);
+  align-content: center;
+  text-align: center;
+  background: var(--second-color);
+  width: 90%;
+  height: 40vh;
+  color: var(--fourth-color);
+  font-size: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem var(--fourth-color);
+}
+/* control btn  */
+#controlBtnCont {
+  display: flex;
+  gap: 2em;
+  background: var(--second-color);
+  border-radius: 1rem;
+  width: 90%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.4rem 0.4rem 0.4rem var(--fourth-color);
+}
+.controlBtn {
+  padding: 0.2em;
+  cursor: pointer;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+}
+.controlBtn:hover {
+  transform: scale(1.5);
+  transition: color, border-radius, transform ease 0.5s;
+}
+#stopBtn:hover,
+#resetBtn:hover {
+  color: var(--first-color);
+  /* box-shadow: 0.4rem 0.4rem 0.4rem var(--fourth-color); */
+}
+#stopBtn {
+    color: var(--third-color);
+    text-shadow: 0.1em 0.1em 0.1em var(--fourth-color);
+}
+#resetBtn {
+    color: var(--third-color);
+    text-shadow: 0.1em 0.1em 0.1em var(--fourth-color);
+}
+#playBtn {
+    color: var(--fourth-color);
+  text-shadow: 0.1em 0.1em 0.2em var(--first-color);
+}
+#playBtn:hover {
+    color: var(--first-color);
+    text-shadow: 0.1em 0.1em 0.1em var(--third-color);
+}
+#playBtn:disabled {
+  color: var(--first-color);
+  text-shadow: none;
+}
+@media screen and (max-width: 480px) {
+  #timer {
+    width: 90%;
+    font-size:3.5rem;
+    border-radius: 1rem;
+  }
+}
