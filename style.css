@@ -23,11 +23,11 @@ header {
   box-shadow: 0.4rem 0.4rem 0.4rem var(--fourth-color);
 }
 #stopWatchHead {
-    text-align: center;
-    margin: 2rem auto;
-    padding: 1rem;
-    color: var(--fourth-color);
-    text-shadow: 0.1rem 0.1rem 0.1rem var(--first-color);
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: var(--fourth-color);
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--first-color);
 }
 
 /* main  */
@@ -70,10 +70,10 @@ main {
   font-size: 1.8rem;
   background: none;
   border: none;
+  transition: transform ease-in-out 0.5s, color ease 0.5s;
 }
 .controlBtn:hover {
   transform: scale(1.5);
-  transition: color, border-radius, transform ease 0.5s;
 }
 #stopBtn:hover,
 #resetBtn:hover {
@@ -81,20 +81,20 @@ main {
   /* box-shadow: 0.4rem 0.4rem 0.4rem var(--fourth-color); */
 }
 #stopBtn {
-    color: var(--third-color);
-    text-shadow: 0.1em 0.1em 0.1em var(--fourth-color);
+  color: var(--third-color);
+  text-shadow: 0.1em 0.1em 0.1em var(--fourth-color);
 }
 #resetBtn {
-    color: var(--third-color);
-    text-shadow: 0.1em 0.1em 0.1em var(--fourth-color);
+  color: var(--third-color);
+  text-shadow: 0.1em 0.1em 0.1em var(--fourth-color);
 }
 #playBtn {
-    color: var(--fourth-color);
+  color: var(--fourth-color);
   text-shadow: 0.1em 0.1em 0.2em var(--first-color);
 }
 #playBtn:hover {
-    color: var(--first-color);
-    text-shadow: 0.1em 0.1em 0.1em var(--third-color);
+  color: var(--first-color);
+  text-shadow: 0.1em 0.1em 0.1em var(--third-color);
 }
 #playBtn:disabled {
   color: var(--first-color);
@@ -103,7 +103,7 @@ main {
 @media screen and (max-width: 480px) {
   #timer {
     width: 90%;
-    font-size:3.5rem;
+    font-size: 3.5rem;
     border-radius: 1rem;
   }
 }
